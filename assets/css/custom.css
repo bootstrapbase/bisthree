@@ -2,8 +2,11 @@
     background: #eee;
 }
 
+/*  ************************************************************************ 
+jumbotron
+*/
 .jumbotron-background {
-    color: white;
+    color: white !important;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.55) 50%, rgba(91, 192, 222, 0.65) 100%), url(img/pexels-photo-110469.jpeg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -11,10 +14,13 @@
     background-size: cover;
 }
 
-.demo {
-  margin: 4em auto;
+.navbar {
+  margin-bottom: 0 !important;
 }
 
+/*  ************************************************************************ 
+DATATABLES
+*/
 .dataTables_length label {
   float: left;
   text-align: left;
@@ -175,4 +181,4 @@ div.DTFC_LeftBodyWrapper tbody tr:first-child td {
 
 div.DTFC_LeftFootWrapper table {
   border-top: none;
-}
+} /* ************************************************************************ DATATABLES END */
