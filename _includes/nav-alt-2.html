@@ -93,112 +93,79 @@
         <br>
         <div class="bs-example bs-example-tabs">
             <ul id="myTab" class="nav nav-tabs">
-              <li class="active"><a href="#signin" data-toggle="tab">Sign In</a></li>
-              <li class=""><a href="#signup" data-toggle="tab">Register</a></li>
-              <li class=""><a href="#why" data-toggle="tab">Why?</a></li>
+              <li class="active"><a href="#prijava" data-toggle="tab">Prijava</a></li>
+              <li class=""><a href="#registracija" data-toggle="tab">Registracija</a></li>
+              <li class=""><a href="#zasto" data-toggle="tab">Zašto?</a></li>
             </ul>
         </div>
       <div class="modal-body">
         <div id="myTabContent" class="tab-content">
-        <div class="tab-pane fade in" id="why">
-        <p>We need this information so that you can receive access to the site and its content. Rest assured your information will not be sold, traded, or given to anyone.</p>
-        <p></p><br> Please contact <a mailto:href="JoeSixPack@Sixpacksrus.com"></a>JoeSixPack@Sixpacksrus.com</a> for any other inquiries.</p>
+        <div class="tab-pane fade in" id="zasto">
+        <p>Potrebne su nam ove informacije kako biste mogli pristupiti sadržaju koji je namjenjen samo našim korisnicima. Ukoliko želite o ovome saznati više, molimo<br> kontaktirajte nas na <a mailto:href="kontakt@bis.ba"></a>kontakt@bis.ba</a> za bilo kakva pitanja.</p>
         </div>
-        <div class="tab-pane fade active in" id="signin">
-            <form class="form-horizontal">
+        <div class="tab-pane fade active in" id="prijava">
+          <form class="">
             <fieldset>
-            <!-- Sign In Form -->
-            <!-- Text input-->
-            <div class="control-group">
-              <label class="control-label" for="userid">Alias:</label>
-              <div class="controls">
-                <input required="" id="userid" name="userid" type="text" class="form-control" placeholder="JoeSixpack" class="input-medium" required="">
+              <!-- Sign In Form -->
+              <!-- Text input-->
+              <div class="from-group">
+                <label class="control-label" for="userid">Korisničko ime:</label>
+                <input required="" id="userid" name="userid" type="text" class="form-control" placeholder="Korisničko ime" class="input-medium" required="">
               </div>
-            </div>
-
-            <!-- Password input-->
-            <div class="control-group">
-              <label class="control-label" for="passwordinput">Password:</label>
-              <div class="controls">
+              <br>
+              <!-- Password input-->
+              <div class="form-group">
+                <label class="control-label" for="passwordinput">Lozinka:</label>
                 <input required="" id="passwordinput" name="passwordinput" class="form-control" type="password" placeholder="********" class="input-medium">
               </div>
-            </div>
 
-            <!-- Multiple Checkboxes (inline) -->
-            <div class="control-group">
-              <label class="control-label" for="rememberme"></label>
-              <div class="controls">
-                <label class="checkbox inline" for="rememberme-0">
-                  <input type="checkbox" name="rememberme" id="rememberme-0" value="Remember me">
-                  Remember me
+              <div class="checkbox">
+                <label for="rememberme-0">
+                  <input type="checkbox" name="rememberme" id="rememberme-0" value="Zapamti me">Zapamti me
                 </label>
               </div>
-            </div>
 
             <!-- Button -->
-            <div class="control-group">
-              <label class="control-label" for="signin"></label>
-              <div class="controls">
-                <button id="signin" name="signin" class="btn btn-success">Sign In</button>
-              </div>
-            </div>
+              <button id="signin" name="signin" class="btn btn-info">Prijava</button>
             </fieldset>
-            </form>
+          </form>
         </div>
-        <div class="tab-pane fade" id="signup">
-            <form class="form-horizontal">
+        
+        <div class="tab-pane fade" id="registracija">
+            <form class="">
             <fieldset>
             <!-- Sign Up Form -->
             <!-- Text input-->
-            <div class="control-group">
+            <div class="form-group">
               <label class="control-label" for="Email">Email:</label>
-              <div class="controls">
-                <input id="Email" name="Email" class="form-control" type="text" placeholder="JoeSixpack@sixpacksrus.com" class="input-large" required="">
-              </div>
+              <input id="Email" name="Email" class="form-control" type="text" placeholder="vašaemailadresa@email.com" class="input-large" required="">
             </div>
             
             <!-- Text input-->
-            <div class="control-group">
-              <label class="control-label" for="userid">Alias:</label>
-              <div class="controls">
-                <input id="userid" name="userid" class="form-control" type="text" placeholder="JoeSixpack" class="input-large" required="">
-              </div>
+            <div class="form-group">
+              <label class="control-label" for="userid">Korisničko ime:</label>
+              <input id="userid" name="userid" class="form-control" type="text" placeholder="Korisničko ime" class="input-large" required="">
             </div>
             
             <!-- Password input-->
-            <div class="control-group">
-              <label class="control-label" for="password">Password:</label>
-              <div class="controls">
+            <div class="form-group">
+              <label class="control-label" for="password">Lozinka:</label>
                 <input id="password" name="password" class="form-control" type="password" placeholder="********" class="input-large" required="">
-                <em>1-8 Characters</em>
-              </div>
+                <em>najmanje 8 znakova</em>
             </div>
             
             <!-- Text input-->
-            <div class="control-group">
-              <label class="control-label" for="reenterpassword">Re-Enter Password:</label>
-              <div class="controls">
+            <div class="form-group">
+              <label class="control-label" for="reenterpassword">Ponovo unesite lozinku:</label>
                 <input id="reenterpassword" class="form-control" name="reenterpassword" type="password" placeholder="********" class="input-large" required="">
-              </div>
             </div>
             
-            <!-- Multiple Radios (inline) -->
-            <br>
-            <div class="control-group">
-              <label class="control-label" for="humancheck">Humanity Check:</label>
-              <div class="controls">
-                <label class="radio inline" for="humancheck-0">
-                  <input type="radio" name="humancheck" id="humancheck-0" value="robot" checked="checked">I'm a Robot</label>
-                <label class="radio inline" for="humancheck-1">
-                  <input type="radio" name="humancheck" id="humancheck-1" value="human">I'm Human</label>
-              </div>
-            </div>
             
             <!-- Button -->
             <div class="control-group">
               <label class="control-label" for="confirmsignup"></label>
               <div class="controls">
-                <button id="confirmsignup" name="confirmsignup" class="btn btn-success">Sign Up</button>
+                <button id="confirmsignup" name="confirmsignup" class="btn btn-info">Prijava</button>
               </div>
             </div>
             </fieldset>
@@ -208,7 +175,7 @@
       </div>
       <div class="modal-footer">
       <center>
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
         </center>
       </div>
     </div>
