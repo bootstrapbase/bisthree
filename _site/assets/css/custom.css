@@ -7,7 +7,7 @@ jumbotron
 */
 .jumbotron-background {
     color: white !important;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.55) 50%, rgba(91, 192, 222, 0.65) 100%), url(img/pexels-photo-110469.jpeg);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.55) 50%, rgba(91, 192, 222, 0.0) 100%), url(img/pexels-photo-110469.jpeg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -182,3 +182,114 @@ div.DTFC_LeftBodyWrapper tbody tr:first-child td {
 div.DTFC_LeftFootWrapper table {
   border-top: none;
 } /* ************************************************************************ DATATABLES END */
+
+
+/*
+MODAL
+*/
+
+.modal-content form label {
+  color: black;
+}
+
+/*
+HELPER CLASSES
+*/
+
+.pl-10 {
+  padding-left: 10px;
+}
+
+.pt-7 {
+  padding-top: 7px;
+}
+
+
+/* **********************************************************************
+LOGIN
+*/
+
+
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,1);
+}
+#login-dp .help-block{
+    font-size:12px    
+}
+#login-dp .bottom{
+    background-color:rgba(255,255,255,1);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .social-buttons{
+    margin:12px 0    
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc 
+}
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
+}
+.btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
+}
+@media(max-width:768px){
+    #login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
+}
+
+/* *****************
+
+*/
+#nav-options: {
+
+}
+
+#nav-options img {
+    max-height: 2.3em;
+    border-radius: 0.3em;
+}
+
+#nav-options .thumbnail {
+  margin: 5px 0 8px;
+}
+
+.navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -1px;
+}
+
+.navbar-nav .badge {
+    color: #2F92CA;
+    background-color: #FFF;
+    font-size: 0.7em;
+    padding: 0.27rem 0.55rem 0.2rem 0.4rem;
+    position: absolute;
+    left: 0.07rem;
+    top: 0.7rem;
+    z-index: 99;
+    border: 0.2rem solid #2F92CA;
+}

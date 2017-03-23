@@ -151,28 +151,99 @@
 
 <div class="jumbotron jumbotron-background">
     <div class="container">
-        <h2>Pregled preduzeća koja žele kupiti usluge i proizvode</h2>
-        <p class="h3">Na ovoj stranici možete naći proizvode i usluge koje trenutno traže preduzeća uključena u mrežu BIS.ba.</p>
-        <p class="h3">Želite kupiti proizvod ili uslugu?</p>
-        <a role="button" class="btn btn-info btn-lg" href="trazim-kupujem-objava-oglasa.html">Dodajte svoj oglas</a>
+        <h2>Pregled preduzeća koja žele kompenzirati usluge i proizvode</h2>
+        <p class="h3">Na ovoj stranici možete naći proizvode i usluge koje preduzeća uključena u mrežu BIS.ba žele kompenzirati.</p>
     </div>
 </div>
 
 <div class="container">
     
-    <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
-  <thead>
-    <tr>
-      <th class="firm_name">Naziv firme</th><!-- Name -->
-      <th>Predmet kupovine </th><!-- Url -->
-      <th>Količina</th><!-- Type -->
-      <th>Isporuka prije datuma</th><!-- Last Modified -->
-      <th>Djelatnost</th>
-    </tr>
-  </thead>
-  <tbody>
-  </tbody>
-</table>
+    <form class="form-horizontal" role="form">
+    <div class="form-group">
+        <label for="predmetKupovine" class="col-sm-2 control-label">Predmet ponude</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="predmetKupovine" placeholder="Unesite tekst koji će opisati predmet kupovine" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="predmetKupovineDetaljanOpis" class="col-sm-2 control-label">Predmet ponude, detaljan opis</label>
+        <div class="col-sm-10">
+            <textarea type="text" class="form-control" id="predmetKupovineDetaljanOpis" placeholder="Unesite detaljan opis (ukoliko je to potrebno)" rows="5"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <span class="col-sm-2"><p class="control-label"><strong>Prilozi</strong></p></span>
+        <div class="col-sm-7">
+            <div class="input-group">
+                <label class="input-group-btn">
+            <span class="btn btn-primary">
+            Prilog sa računara... <input type="file" style="display: none;" multiple>
+            </span>
+            </label>
+                <input type="text" class="form-control" readonly placeholder="Odaberite jedan ili više fajlova za prilog (ukoliko je to potrebno)">
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="predmetKupovineKolicina" class="col-sm-2 control-label">Potrebna količina</label>
+        <div class="col-sm-2">
+        <input type="number" class="form-control" id="predmetKupovineKolicina" placeholder="broj" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="predmetKupovineJedinicaMjere" class="col-sm-2 control-label">Jedinica mjere</label>
+        <div class="col-sm-3">
+        <input type="text" class="form-control" id="predmetKupovineJedinicaMjere" placeholder="npr. litara, kom, kg" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="predmetKupovineIsporukaDatum" class="col-sm-2 control-label">Isporuka do datuma</label>
+            <div class="col-sm-3">
+                <input id="date2" type="date" name="date2" value="2017-03-18" class="form-control">
+            </div>
+    </div>
+    <div class="form-group">
+        <label for="predmetKupovineIsporukaDatum" class="col-sm-2 control-label">Djelatnosti</label>
+            <div class="col-sm-5">
+                <select id="djelatnost" multiple class="form-control">
+                    <option>Poljoprivreda, lov i šumarstvo</option>
+                    <option>Ribarstvo</option>
+                    <option>Vađenje ruda i kamena</option>
+                    <option>Prerađivačka industrija</option>
+                    <option>Proizvodnja i snabdjevanje el. energijom, gasom i vodom</option>
+                    <option>Građevinarstvo</option>
+                    <option>Trgovina na veliko</option>
+                    <option>Trgovina na malo</option>
+                    <option>Popravak motornih vozila</option>
+                    <option>Ugostiteljstvo</option>
+                    <option>Saobraćaj, skladištenje i komunikacije</option>
+                    <option>Finansijsko posredovanje i osiguranje</option>
+                    <option>Poslovanje nekretninama</option>
+                    <option>Državna uprava i odbrana</option>
+                    <option>Obrazovanje</option>
+                    <option>Zdravstveni i socijalni rad</option>
+                    <option>Ostale javne komunalne djelatnosti</option>
+                </select>
+            </div>
+    </div>
+<div class="form-group">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-10">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="checked">
+            Dostaviti ponudu
+          </label>
+        </div>
+    </div>
+</div>
+    <div class="form-group">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-10">
+            <button type="submit" class="btn btn-default">Objavi</button>
+        </div>
+    </div>
+</form>
 
 
 </div>

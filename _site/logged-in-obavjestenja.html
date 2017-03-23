@@ -99,49 +99,21 @@
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
-        <li><span class="navbar-text"><span class="label label-primary ">755</span> Aktivnih ponuda</span></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Prijava / Registracija <span class="caret"></span></a>
-          <ul id="login-dp" class="dropdown-menu">
-            <li>
-              <div class="row">
-                <div class="col-md-12">
-                  Prijavite se koristeći
-                  <div class="social-buttons">
-                    <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
-                    <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
-                  </div>
-                  ili
-                  <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
-                    <div class="form-group">
-                      <label class="sr-only" for="exampleInputEmail2">Email addresa</label>
-                      <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Upišite email adresu" required>
-                    </div>
-                    <div class="form-group">
-                      <label class="sr-only" for="exampleInputPassword2">Lozinka</label>
-                      <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Upišite lozinku" required>
-                      <div class="help-block text-right"><a href="">Zaboravili ste lozinku?</a></div>
-                    </div>
-                    <div class="form-group">
-                      <!-- TODO: change back to this button when you hook up server code:
-                        <button type="submit" class="btn btn-primary btn-block">Prijava</button>
-                      -->
-                        <a href="logged-in-index.html" class="btn btn-primary btn-block">Prijava</a>
-                    </div>
-                    <div class="checkbox">
-                      <label>
-											 <input type="checkbox"> zapamti me
-											 </label>
-                    </div>
-                  </form>
-                </div>
-                <div class="bottom text-center">
-                  Novi ste ovdje? <a href="#"><b>Pridružite nam se</b></a>
-                </div>
-              </div>
-            </li>
+        <li><a href="logged-in-obavjestenja.html"><span class="badge">3</span><span class="fa fa-bell-o"></span> Obavještenja</a></li>
+        <li><a href="logged-in-poruke.html"><span class="badge">8</span><span class="fa fa-envelope-o"></span> Nove poruke</a></li>
+        <div id="nav-options" class="btn-group pull-right hidden-xs">
+          <button type="button" class="btn btn-default dropdown-toggle thumbnail" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="assets/css/img/jon.jpg">
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Vaš profil</a></li>
+            <!--
+            <li><a href="settings.html">Postavke</a></li>
+            -->
+            <li role="separator" class="divider"></li>
+            <li><a href="index.html">Logout</a></li>
           </ul>
-        </li>
+        </div>
       </ul>
     </div>
     <!-- /.navbar-collapse -->
@@ -151,32 +123,58 @@
 
 <div class="jumbotron jumbotron-background">
     <div class="container">
-        <h2>Pregled preduzeća koja žele kupiti usluge i proizvode</h2>
-        <p class="h3">Na ovoj stranici možete naći proizvode i usluge koje trenutno traže preduzeća uključena u mrežu BIS.ba.</p>
-        <p class="h3">Želite kupiti proizvod ili uslugu?</p>
-        <a role="button" class="btn btn-info btn-lg" href="trazim-kupujem-objava-oglasa.html">Dodajte svoj oglas</a>
+        <h2>Obavještenja (3)</h2>
     </div>
 </div>
-
 <div class="container">
-    
-    <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
-  <thead>
-    <tr>
-      <th class="firm_name">Naziv firme</th><!-- Name -->
-      <th>Predmet kupovine </th><!-- Url -->
-      <th>Količina</th><!-- Type -->
-      <th>Isporuka prije datuma</th><!-- Last Modified -->
-      <th>Djelatnost</th>
-    </tr>
-  </thead>
-  <tbody>
-  </tbody>
-</table>
-
-
+    <div class="row">
+        <div class="col-xs-8">
+            <div class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object" src="http://placehold.it/64x64" alt="...">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Nova usluga servisa BIS.ba</h4>
+                    <p class="">Sa zadovoljstvom Vas obavještavamo da je servis BIS.ba uveo novu uslugu lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui impedit saepe quisquam dicta amet ducimus aspernatur molestias quas delectus nam. Nam, maxime, sapiente, tempora
+                        ipsum debitis atque assumenda nobis cupiditate rem consectetur vitae quisquam quos perferendis nemo voluptates voluptatum aspernatur adipisci reprehenderit ducimus non velit placeat distinctio minus dolorem accusantium?</p>
+                </div>
+            </div>
+            <div class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object" src="http://placehold.it/64x64" alt="...">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Vaš probni period ističe za 30 dana</h4>
+                    <p class="">Nadamo se da ste zadovoljni sa rezultatima koje ste ostvarili sa servisom BIS.ba. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui impedit saepe quisquam dicta amet ducimus aspernatur molestias quas delectus nam. Nam, maxime, sapiente,
+                        tempora ipsum debitis atque assumenda nobis cupiditate rem consectetur vitae quisquam quos perferendis nemo voluptates voluptatum aspernatur adipisci reprehenderit ducimus non velit placeat distinctio minus dolorem accusantium?</p>
+                </div>
+            </div>
+            <div class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object" src="http://placehold.it/64x64" alt="...">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Poziv na saradnju</h4>
+                    <p class="">Servis BIS.ba poziva Vas na saradnju. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui impedit saepe quisquam dicta amet ducimus aspernatur molestias quas delectus nam. Nam, maxime, sapiente, tempora ipsum debitis atque assumenda
+                        nobis cupiditate rem consectetur vitae quisquam quos perferendis nemo voluptates voluptatum aspernatur adipisci reprehenderit ducimus non velit placeat distinctio minus dolorem accusantium?</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <ul>
+                <li><a href="">Arhiva obavještenja</a></li>
+                <li><a href="">Arhiva obavještenja</a></li>
+                <li><a href="">Arhiva obavještenja</a></li>
+            </ul>
+        </div>
+    </div>
 </div>
-
 <footer class="mainfooter bg-default pt-5" role="contentinfo">
   <div class="footer-top p-y-0">
 
