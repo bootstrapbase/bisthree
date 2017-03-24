@@ -1,0 +1,52 @@
+{
+   "data": [
+      [
+         "ABCD",
+         "Prodajem građevinske mašine, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, quae quis dolores quas ex labore et delectus temporibus unde cum.",
+         "Prodavač d.o.o. Tuzla",
+         "Nova ponuda",
+         "2017-01-02",
+         "2017-05-05"
+      ],
+      [
+         "Kupovina",
+         "Kupujem uredski namještaj, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores modi cumque labore facilis eaque earum.",
+         "Kupac d.o.o. Tuzla",
+         "Posao završen - Arhiva",
+         "2016-01-01",
+         "2016-05-05"
+      ],
+      [
+         "Kompenzacija",
+         "Kompenziram metar drva za nešto drugo, Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+         "Kompenzator d.o.o. Tuzla",
+         "Poslat zahtjev za finansiranje",
+         "2015-01-01",
+         "2017-05-05"
+      ],
+      [
+         "Prodaja",
+         "Prodajem plastičnu stolariju, lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores modi cumque labore facilis eaque earum.",
+         "Prodavač d.o.o. Tuzla",
+         "Zahtjev za finansiranje odobren",
+         "2017-03-03",
+         "2017-05-05"
+      ],
+      [
+         "Kupovina",
+         "Kupujem metar uglja, lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores modi cumque labore facilis eaque earum.",
+         "Strateški kupac d.o.o. Sarajevo",
+         "Potpisan ugovor - sklopljen posao",
+         "2017-02-02",
+         "2017-04-04"
+      ],
+      [
+         "Kupovina",
+         "Kupujem metar kamena, lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores modi cumque labore facilis eaque earum.",
+         "Strateški kupac d.o.o. Banja Luka",
+         "Posao završen - arhiva",
+         "2017-03-03",
+         "2017-06-06"
+      ]
+   ]
+}

@@ -105,6 +105,228 @@ $(document).ready(function(){
    });
 });
 
+/*
+example4:
+my own code
+
+$(document).ready(function(){
+    var table = $('#example4').DataTable({
+        ajax: 'ponude.txt'
+    })
+})
+*/
+
+$(document).ready(function() {
+    $('#tabela-ponude-1').DataTable({
+        language: {
+            processing: "Obrađujem...",
+            search: "Pretraži",
+            lengthMenu: "Prikaži _MENU_ rezultata po stranici",
+            info: "Prikazano _START_ do _END_ od _TOTAL_ rezultata",
+            infoEmpty: "Prikazano 0 do 0 od 0 rezultata",
+            infoFiltered: "(filtrirano iz _MAX_ ukupnih rezultata)",
+            infoPostFix: "",
+            loadingRecords: "Učitavam...",
+            zeroRecords: "Ništa nije pronađeno",
+            emptyTable: "Nema podataka u tabeli",
+            paginate: {
+                first: "Prva",
+                previous: "Nazad",
+                next: "Naprijed",
+                last: "Zadnja"
+            },
+            aria: {
+                sortAscending: ": aktiviraj za rastući poredak",
+                sortDescending: ": aktiviraj za padajući poredak"
+            }
+        },
+        "aaData": [
+            ["Prodaja", "Prodajem građevinske mašine, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, quae quis dolores quas ex labore et delectus temporibus unde cum.", "Prodavač d.o.o. Tuzla", "Nova ponuda", "2017-01-02", "2017-05-05"],
+            ["Prodaja", "Prodajem plastičnu stolariju, lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores modi cumque labore facilis eaque earum.", "Prodavač d.o.o. Tuzla", "Zahtjev za finansiranje odobren", "2017-03-03", "2017-05-05"],
+            ["Prodaja", "Prodajem građevinske mašine, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, quae quis dolores quas ex labore et delectus temporibus unde cum.", "Prodavač d.o.o. Tuzla", "Nova ponuda", "2017-01-02", "2017-05-05"],
+            ["Prodaja", "Prodajem plastičnu stolariju, lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores modi cumque labore facilis eaque earum.", "Prodavač d.o.o. Tuzla", "Zahtjev za finansiranje odobren", "2017-03-03", "2017-05-05"],
+            ["Prodaja", "Prodajem građevinske mašine, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, quae quis dolores quas ex labore et delectus temporibus unde cum.", "Prodavač d.o.o. Tuzla", "Nova ponuda", "2017-01-02", "2017-05-05"],
+            ["Prodaja", "Prodajem plastičnu stolariju, lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores modi cumque labore facilis eaque earum.", "Prodavač d.o.o. Tuzla", "Zahtjev za finansiranje odobren", "2017-03-03", "2017-05-05"],
+            ["Prodaja", "Prodajem građevinske mašine, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, quae quis dolores quas ex labore et delectus temporibus unde cum.", "Prodavač d.o.o. Tuzla", "Nova ponuda", "2017-01-02", "2017-05-05"],
+            ["Prodaja", "Prodajem plastičnu stolariju, lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores modi cumque labore facilis eaque earum.", "Prodavač d.o.o. Tuzla", "Zahtjev za finansiranje odobren", "2017-03-03", "2017-05-05"],
+            ["Prodaja", "Prodajem građevinske mašine, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, quae quis dolores quas ex labore et delectus temporibus unde cum.", "Prodavač d.o.o. Tuzla", "Nova ponuda", "2017-01-02", "2017-05-05"],
+            ["Prodaja", "Prodajem plastičnu stolariju, lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores modi cumque labore facilis eaque earum.", "Prodavač d.o.o. Tuzla", "Zahtjev za finansiranje odobren", "2017-03-03", "2017-05-05"],
+            ["Prodaja", "Prodajem građevinske mašine, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, quae quis dolores quas ex labore et delectus temporibus unde cum.", "Prodavač d.o.o. Tuzla", "Nova ponuda", "2017-01-02", "2017-05-05"],
+
+        ],
+        "aoColumnDefs": [{
+            "sTitle": "Naziv firme",
+            "aTargets": ["firm_name"]
+        }, {
+            "aTargets": [1],
+            // "bSortable": false,
+            "bSortable": true,
+            "mRender": function(url, type, full) {
+                // return '<a href="' + url + '">' + url + '</a>';
+                return '<a href="detaljan-oglas.html">' + url + '</a>';
+            }
+        },
+        /*
+        {
+            "aTargets": [3],
+            "sType": "date",
+            "mRender": function(date, type, full) {
+                return (full[2] == "Blog") ?
+                    new Date(date).toDateString() :
+                    "N/A";
+            }
+        }
+        */
+        ]
+    });
+});
+
+
+$(document).ready(function() {
+    $('#tabela-ponude-2').DataTable({
+        language: {
+            processing: "Obrađujem...",
+            search: "Pretraži",
+            lengthMenu: "Prikaži _MENU_ rezultata po stranici",
+            info: "Prikazano _START_ do _END_ od _TOTAL_ rezultata",
+            infoEmpty: "Prikazano 0 do 0 od 0 rezultata",
+            infoFiltered: "(filtrirano iz _MAX_ ukupnih rezultata)",
+            infoPostFix: "",
+            loadingRecords: "Učitavam...",
+            zeroRecords: "Ništa nije pronađeno",
+            emptyTable: "Nema podataka u tabeli",
+            paginate: {
+                first: "Prva",
+                previous: "Nazad",
+                next: "Naprijed",
+                last: "Zadnja"
+            },
+            aria: {
+                sortAscending: ": aktiviraj za rastući poredak",
+                sortDescending: ": aktiviraj za padajući poredak"
+            }
+        },
+        "aaData": [
+            ["Kupovina", "Kupujem uredski namještaj, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores modi cumque labore facilis eaque earum.", "Kupac d.o.o. Tuzla", "Posao završen - Arhiva", "2016-01-01", "2016-05-05"],
+            ["Kupovina", "Kupujem uredski namještaj, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores modi cumque labore facilis eaque earum.", "Kupac d.o.o. Tuzla", "Posao završen - Arhiva", "2016-01-01", "2016-05-05"],
+            ["Kupovina", "Kupujem uredski namještaj, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores modi cumque labore facilis eaque earum.", "Kupac d.o.o. Tuzla", "Posao završen - Arhiva", "2016-01-01", "2016-05-05"],
+            ["Kupovina", "Kupujem uredski namještaj, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores modi cumque labore facilis eaque earum.", "Kupac d.o.o. Tuzla", "Posao završen - Arhiva", "2016-01-01", "2016-05-05"],
+            ["Kupovina", "Kupujem uredski namještaj, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores modi cumque labore facilis eaque earum.", "Kupac d.o.o. Tuzla", "Posao završen - Arhiva", "2016-01-01", "2016-05-05"],
+            ["Kupovina", "Kupujem uredski namještaj, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores modi cumque labore facilis eaque earum.", "Kupac d.o.o. Tuzla", "Posao završen - Arhiva", "2016-01-01", "2016-05-05"],
+            ["Kupovina", "Kupujem uredski namještaj, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores modi cumque labore facilis eaque earum.", "Kupac d.o.o. Tuzla", "Posao završen - Arhiva", "2016-01-01", "2016-05-05"],
+            ["Kupovina", "Kupujem uredski namještaj, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores modi cumque labore facilis eaque earum.", "Kupac d.o.o. Tuzla", "Posao završen - Arhiva", "2016-01-01", "2016-05-05"],
+            ["Kupovina", "Kupujem uredski namještaj, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores modi cumque labore facilis eaque earum.", "Kupac d.o.o. Tuzla", "Posao završen - Arhiva", "2016-01-01", "2016-05-05"],
+            ["Kupovina", "Kupujem uredski namještaj, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores modi cumque labore facilis eaque earum.", "Kupac d.o.o. Tuzla", "Posao završen - Arhiva", "2016-01-01", "2016-05-05"],
+            ["Kupovina", "Kupujem uredski namještaj, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores modi cumque labore facilis eaque earum.", "Kupac d.o.o. Tuzla", "Posao završen - Arhiva", "2016-01-01", "2016-05-05"],
+            ["Kupovina", "Kupujem uredski namještaj, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores modi cumque labore facilis eaque earum.", "Kupac d.o.o. Tuzla", "Posao završen - Arhiva", "2016-01-01", "2016-05-05"],
+        ],
+        "aoColumnDefs": [{
+            "sTitle": "Naziv firme",
+            "aTargets": ["firm_name"]
+        }, {
+            "aTargets": [1],
+            // "bSortable": false,
+            "bSortable": true,
+            "mRender": function(url, type, full) {
+                // return '<a href="' + url + '">' + url + '</a>';
+                return '<a href="detaljan-oglas.html">' + url + '</a>';
+            }
+        },
+        /*
+        {
+            "aTargets": [3],
+            "sType": "date",
+            "mRender": function(date, type, full) {
+                return (full[2] == "Blog") ?
+                    new Date(date).toDateString() :
+                    "N/A";
+            }
+        }
+        */
+        ]
+    });
+});
+
+$(document).ready(function() {
+    $('#tabela-ponude-3').DataTable({
+        language: {
+            processing: "Obrađujem...",
+            search: "Pretraži",
+            lengthMenu: "Prikaži _MENU_ rezultata po stranici",
+            info: "Prikazano _START_ do _END_ od _TOTAL_ rezultata",
+            infoEmpty: "Prikazano 0 do 0 od 0 rezultata",
+            infoFiltered: "(filtrirano iz _MAX_ ukupnih rezultata)",
+            infoPostFix: "",
+            loadingRecords: "Učitavam...",
+            zeroRecords: "Ništa nije pronađeno",
+            emptyTable: "Nema podataka u tabeli",
+            paginate: {
+                first: "Prva",
+                previous: "Nazad",
+                next: "Naprijed",
+                last: "Zadnja"
+            },
+            aria: {
+                sortAscending: ": aktiviraj za rastući poredak",
+                sortDescending: ": aktiviraj za padajući poredak"
+            }
+        },
+        "aaData": [
+            ["Kompenzacija", "Kompenziram metar drva za nešto drugo, Lorem ipsum dolor sit amet, consectetur adipisicing elit.", "Kompenzator d.o.o. Tuzla", "Poslat zahtjev za finansiranje", "2015-01-01", "2017-05-05"],
+            ["Kompenzacija", "Kompenziram metar drva za nešto drugo, Lorem ipsum dolor sit amet, consectetur adipisicing elit.", "Kompenzator d.o.o. Tuzla", "Poslat zahtjev za finansiranje", "2015-01-01", "2017-05-05"],
+            ["Kompenzacija", "Kompenziram metar drva za nešto drugo, Lorem ipsum dolor sit amet, consectetur adipisicing elit.", "Kompenzator d.o.o. Tuzla", "Poslat zahtjev za finansiranje", "2015-01-01", "2017-05-05"],
+            ["Kompenzacija", "Kompenziram metar drva za nešto drugo, Lorem ipsum dolor sit amet, consectetur adipisicing elit.", "Kompenzator d.o.o. Tuzla", "Poslat zahtjev za finansiranje", "2015-01-01", "2017-05-05"],
+            ["Kompenzacija", "Kompenziram metar drva za nešto drugo, Lorem ipsum dolor sit amet, consectetur adipisicing elit.", "Kompenzator d.o.o. Tuzla", "Poslat zahtjev za finansiranje", "2015-01-01", "2017-05-05"],
+            ["Kompenzacija", "Kompenziram metar drva za nešto drugo, Lorem ipsum dolor sit amet, consectetur adipisicing elit.", "Kompenzator d.o.o. Tuzla", "Poslat zahtjev za finansiranje", "2015-01-01", "2017-05-05"],
+            ["Kompenzacija", "Kompenziram metar drva za nešto drugo, Lorem ipsum dolor sit amet, consectetur adipisicing elit.", "Kompenzator d.o.o. Tuzla", "Poslat zahtjev za finansiranje", "2015-01-01", "2017-05-05"],
+            ["Kompenzacija", "Kompenziram metar drva za nešto drugo, Lorem ipsum dolor sit amet, consectetur adipisicing elit.", "Kompenzator d.o.o. Tuzla", "Poslat zahtjev za finansiranje", "2015-01-01", "2017-05-05"],
+            ["Kompenzacija", "Kompenziram metar drva za nešto drugo, Lorem ipsum dolor sit amet, consectetur adipisicing elit.", "Kompenzator d.o.o. Tuzla", "Poslat zahtjev za finansiranje", "2015-01-01", "2017-05-05"],
+            ["Kompenzacija", "Kompenziram metar drva za nešto drugo, Lorem ipsum dolor sit amet, consectetur adipisicing elit.", "Kompenzator d.o.o. Tuzla", "Poslat zahtjev za finansiranje", "2015-01-01", "2017-05-05"],
+            ["Kompenzacija", "Kompenziram metar drva za nešto drugo, Lorem ipsum dolor sit amet, consectetur adipisicing elit.", "Kompenzator d.o.o. Tuzla", "Poslat zahtjev za finansiranje", "2015-01-01", "2017-05-05"],
+            ["Kompenzacija", "Kompenziram metar drva za nešto drugo, Lorem ipsum dolor sit amet, consectetur adipisicing elit.", "Kompenzator d.o.o. Tuzla", "Poslat zahtjev za finansiranje", "2015-01-01", "2017-05-05"],
+
+        ],
+        "aoColumnDefs": [{
+            "sTitle": "Naziv firme",
+            "aTargets": ["firm_name"]
+        }, {
+            "aTargets": [1],
+            // "bSortable": false,
+            "bSortable": true,
+            "mRender": function(url, type, full) {
+                // return '<a href="' + url + '">' + url + '</a>';
+                return '<a href="detaljan-oglas.html">' + url + '</a>';
+            }
+        },
+        /*
+        {
+            "aTargets": [3],
+            "sType": "date",
+            "mRender": function(date, type, full) {
+                return (full[2] == "Blog") ?
+                    new Date(date).toDateString() :
+                    "N/A";
+            }
+        }
+        */
+        ]
+    });
+});
+
+/*
+https://datatables.net/extensions/buttons/examples/styling/bootstrap.html
+*/
+$(document).ready(function() {
+    var table = $('#example5').DataTable( {
+        lengthChange: false,
+        buttons: [ 'copy', 'excel', 'pdf', 'colvis' ]
+    } );
+ 
+    table.buttons().container()
+        .appendTo( '#example5_wrapper:eq(0)' );
+} );
+
+
 // https://www.abeautifulsite.net/whipping-file-inputs-into-shape-with-bootstrap-3
 // http://codepen.io/claviska/pen/vAgmd
 $(function() {
