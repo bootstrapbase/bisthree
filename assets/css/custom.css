@@ -293,3 +293,14 @@ LOGIN
     z-index: 99;
     border: 0.2rem solid #2F92CA;
 }
+
+.p-t-40 {
+  padding-top: 40px;
+}
+
+.m-t-40 {
+  margin-top: 40px;
+}
+.navbar-toggle .icon-bar {
+  background-color: #23527c; 
+}

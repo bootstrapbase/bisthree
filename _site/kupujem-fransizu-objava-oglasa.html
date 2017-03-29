@@ -213,50 +213,89 @@
 
 <div class="jumbotron jumbotron-background">
     <div class="container">
-        <h2>Prodaja uredskih stolica, 50 komada</h2>
+        <h2>Kupujem fransizu, objava oglasa</h2>
+        <p class="h3">Popunite formular kako biste objavili Vaš oglas.</p>
     </div>
 </div>
-<div class="">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                        <a href="#" class="thumbnail">
-                             <img src="http://placehold.it/350x200/5bc0de/fff/?text=LOGO+FIRME" class="img-responsive">
-                        </a>
-                <h2>Firma ABCDEFG d.o.o. Sarajevo</h2>
-                <h3>O firmi</h3>
-                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium laborum ipsam laboriosam distinctio earum asperiores voluptatem obcaecati nisi sint voluptas!</p>
-                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium laborum ipsam laboriosam distinctio earum asperiores voluptatem obcaecati nisi sint voluptas!</p>
-                <hr>
-                <h3>Aktivni oglasi:</h3>
-                <ul>
-                    <li><a href="detaljan-oglas-2.html">Kupovina rashladne vitrine marke Beko...</a></li>
-                    <li><a href="detaljan-oglas-3.html">Kompenzacija 1000 kg mrkog uglja...</a></li>
-                    <li><a href="detaljan-oglas-4.html">Prodaja uredskih stolica, 50 komada...</a></li>
-                    <li><a href="detaljan-oglas-5.html">Kupovina A4 papira u pakovanju od 500 listova, 1000 komada...</a></li>
-                    <li><a href="detaljan-oglas-6.html">Kancelarijski prostor pod zakup</a></li>
-                </ul>
-            </div>
-            <div class="col-md-8">
-                <h3>Tekst oglasa</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, ex fuga excepturi error laboriosam neque. Quae, odio, obcaecati, est ex ratione nulla eum sint voluptate magni aliquid beatae fugit modi expedita laboriosam adipisci amet commodi
-                    accusantium distinctio perspiciatis vero porro sunt provident mollitia aliquam cum non corporis quia aperiam tenetur atque voluptates a repudiandae deleniti. Fugiat, incidunt, assumenda, minima dolore excepturi numquam esse suscipit
-                    mollitia aperiam eligendi similique ex hic reprehenderit. Numquam, dolorem, amet, quis, accusamus sapiente harum odio id quod odit repellat nobis et molestiae fuga ipsam veniam exercitationem libero impedit quam voluptate cum rerum
-                    ipsa sint cumque asperiores.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, commodi voluptate reiciendis ad dignissimos veritatis vel alias consequatur dicta exercitationem labore a minus fuga quas blanditiis ratione porro sunt in!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, illo, necessitatibus, hic, blanditiis odit maxime dolore sit est possimus rem nulla dignissimos cupiditate fugit obcaecati labore consectetur incidunt at ab molestiae placeat
-                    corporis nihil laborum asperiores perspiciatis repudiandae quibusdam veritatis.</p>
-                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, pariatur, eum laboriosam quis distinctio perferendis modi cupiditate veritatis placeat totam ipsam voluptates quaerat ut alias ducimus voluptatum ullam nisi sint accusamus
-                    quia fugiat optio sed quo? Sapiente, quaerat, eveniet, illum accusamus facilis magni commodi consectetur ut atque quo explicabo suscipit quia non maxime laboriosam harum officia consequatur veritatis fugit consequuntur placeat eaque
-                    laudantium est corporis ea necessitatibus quod ex fuga!</p>
-                <br>
-                <a href="#" class="btn btn-info" role="button">Preuzmi dokumentaciju</a>
-                <a href="#" class="btn btn-info" role="button">Pošalji ponudu</a>
-                <a href="#" class="btn btn-success" role="button">Pošalji zahtjev za finansiranje</a>
-                <br>
+
+<div class="container">
+    
+    <form class="form-horizontal" role="form">
+    <div class="form-group">
+        <label for="predmetKupovine" class="col-sm-2 control-label">Naslov zahtjeva</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="predmetKupovine" placeholder="Unesite tekst koji će opisati predmet zahtjeva" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="predmetKupovineDetaljanOpis" class="col-sm-2 control-label">Detaljan opis</label>
+        <div class="col-sm-10">
+            <textarea type="text" class="form-control" id="predmetKupovineDetaljanOpis" placeholder="Unesite detaljan opis (ukoliko je to potrebno)" rows="5"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <span class="col-sm-2"><p class="control-label"><strong>Prilozi</strong></p></span>
+        <div class="col-sm-7">
+            <div class="input-group">
+                <label class="input-group-btn">
+            <span class="btn btn-primary">
+            Prilog sa računara... <input type="file" style="display: none;" multiple>
+            </span>
+            </label>
+                <input type="text" class="form-control" readonly placeholder="Odaberite jedan ili više fajlova za prilog (ukoliko je to potrebno)">
             </div>
         </div>
     </div>
+    <div class="form-group">
+        <label for="predmetKupovineIsporukaDatum" class="col-sm-2 control-label">Ponude slati do datuma</label>
+            <div class="col-sm-3">
+                <input id="date2" type="date" name="date2" value="2017-03-18" class="form-control">
+            </div>
+    </div>
+    <div class="form-group">
+        <label for="predmetKupovineIsporukaDatum" class="col-sm-2 control-label">Djelatnosti</label>
+            <div class="col-sm-5">
+                <select id="djelatnost" multiple class="form-control">
+                    <option>Poljoprivreda, lov i šumarstvo</option>
+                    <option>Ribarstvo</option>
+                    <option>Vađenje ruda i kamena</option>
+                    <option>Prerađivačka industrija</option>
+                    <option>Proizvodnja i snabdjevanje el. energijom, gasom i vodom</option>
+                    <option>Građevinarstvo</option>
+                    <option>Trgovina na veliko</option>
+                    <option>Trgovina na malo</option>
+                    <option>Popravak motornih vozila</option>
+                    <option>Ugostiteljstvo</option>
+                    <option>Saobraćaj, skladištenje i komunikacije</option>
+                    <option>Finansijsko posredovanje i osiguranje</option>
+                    <option>Poslovanje nekretninama</option>
+                    <option>Državna uprava i odbrana</option>
+                    <option>Obrazovanje</option>
+                    <option>Zdravstveni i socijalni rad</option>
+                    <option>Ostale javne komunalne djelatnosti</option>
+                </select>
+            </div>
+    </div>
+<div class="form-group">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-10">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="checked">
+            Dostaviti ponudu
+          </label>
+        </div>
+    </div>
+</div>
+    <div class="form-group">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-10">
+            <button type="submit" class="btn btn-default">Objavi</button>
+        </div>
+    </div>
+</form>
+
+
 </div>
 
 <footer class="mainfooter bg-default pt-5" role="contentinfo">
@@ -372,6 +411,7 @@
     </div>
   </div>
 </footer>
+
 
 
 
