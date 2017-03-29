@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>BIS.ba</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/fa/css/font-awesome.css" rel="stylesheet">
+    <link href="assets/css/datatables-fontawesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/dataTables.min.css" type="text/css" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    
+    <!--Page Content-->
+    <nav class="navbar bg-info">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">BIS.BA</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tražim <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="trazim-kupujem">Kupujem</a></li>
+            <li><a href="trazim-zakup">Tražim pod zakup</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="trazim-kompenzaciju">Tražim kompenzaciju</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nudim <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="nudim-prodajem">Prodajem</a></li>
+            <li><a href="nudim-zakup">Iznajmljujem</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="nudim-kompenzaciju">Nudim kompenzaciju</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Baza podataka <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-header">Podaci o firmama</li>
+            <li><a href="adresar-poslovnih-subjekata.html">Adresar poslovnih subjekata</a></li>
+            <li><a href="#">Podaci o transakcijskim računima</a></li>
+            <li role="separator" class="divider"></li>
+            <li class="dropdown-header">Propisi i procesi</li>
+            <li><a href="#">Propisi</a></li>
+            <li><a href="#">Procesi</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Finansiranje</a></li>
+        <li><a href="#">Novosti</a></li>
+        <li><a href="#">Blog</a></li>
+        <li>
+          <div class="btn-group">
+            <button data-toggle="dropdown" class="btn navbar-btn btn-default dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Start Up <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="kupovina-biznisa">Kupovina biznisa</a></li>
+              <li><a href="prodaja-biznisa">Prodaja biznisa</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="izradjujem-poslovni-plan">Izrađujem poslovni plan</a></li>
+              <li><a href="trazim-poslovni-plan">Tražim poslovni plan</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="stvaranje-tima-novog-poduhvata">Stvaranje tima novog poduhvata</li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Prilike i generiranje ideja</li>
+              <li role="separator" class="divider"></li>
+                        <li><a href="#">Tražim usluge freelancera</li>
+                        <li><a href="#">Nudim usluge freelancera</li>
+              <li role="separator" class="divider"></li>
+                        <li><a href="nudim-fransizu">Nudim franšizu</a></li>
+              <li><a href="kupujem-fransizu">Kupujem franšizu</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><span class="navbar-text"><span class="label label-primary ">755</span> Aktivnih ponuda</span>
+        </li>
+        <li>
+          <div class="btn-group">
+            <button class="btn navbar-btn btn-info " href="#signup" data-toggle="modal" data-target=".bs-modal-sm">Prijava / Registracija</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
+
+<!-- Modal -->
+<div class="modal fade bs-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+        <br>
+        <div class="bs-example bs-example-tabs">
+            <ul id="myTab" class="nav nav-tabs">
+              <li class="active"><a href="#prijava" data-toggle="tab">Prijava</a></li>
+              <li class=""><a href="#registracija" data-toggle="tab">Registracija</a></li>
+              <li class=""><a href="#zasto" data-toggle="tab">Zašto?</a></li>
+            </ul>
+        </div>
+      <div class="modal-body">
+        <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade in" id="zasto">
+        <p>Potrebne su nam ove informacije kako biste mogli pristupiti sadržaju koji je namjenjen samo našim korisnicima. Ukoliko želite o ovome saznati više, molimo<br> kontaktirajte nas na <a mailto:href="kontakt@bis.ba"></a>kontakt@bis.ba</a> za bilo kakva pitanja.</p>
+        </div>
+        <div class="tab-pane fade active in" id="prijava">
+          <form class="">
+            <fieldset>
+              <!-- Sign In Form -->
+              <!-- Text input-->
+              <div class="from-group">
+                <label class="control-label" for="userid">Korisničko ime:</label>
+                <input required="" id="userid" name="userid" type="text" class="form-control" placeholder="Korisničko ime" class="input-medium" required="">
+              </div>
+              <br>
+              <!-- Password input-->
+              <div class="form-group">
+                <label class="control-label" for="passwordinput">Lozinka:</label>
+                <input required="" id="passwordinput" name="passwordinput" class="form-control" type="password" placeholder="********" class="input-medium">
+              </div>
+
+              <div class="checkbox">
+                <label for="rememberme-0">
+                  <input type="checkbox" name="rememberme" id="rememberme-0" value="Zapamti me">Zapamti me
+                </label>
+              </div>
+
+            <!-- Button -->
+              <button id="signin" name="signin" class="btn btn-info">Prijava</button>
+            </fieldset>
+          </form>
+        </div>
+        
+        <div class="tab-pane fade" id="registracija">
+            <form class="">
+            <fieldset>
+            <!-- Sign Up Form -->
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="control-label" for="Email">Email:</label>
+              <input id="Email" name="Email" class="form-control" type="text" placeholder="vašaemailadresa@email.com" class="input-large" required="">
+            </div>
+            
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="control-label" for="userid">Korisničko ime:</label>
+              <input id="userid" name="userid" class="form-control" type="text" placeholder="Korisničko ime" class="input-large" required="">
+            </div>
+            
+            <!-- Password input-->
+            <div class="form-group">
+              <label class="control-label" for="password">Lozinka:</label>
+                <input id="password" name="password" class="form-control" type="password" placeholder="********" class="input-large" required="">
+                <em>najmanje 8 znakova</em>
+            </div>
+            
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="control-label" for="reenterpassword">Ponovo unesite lozinku:</label>
+                <input id="reenterpassword" class="form-control" name="reenterpassword" type="password" placeholder="********" class="input-large" required="">
+            </div>
+            
+            
+            <!-- Button -->
+            <div class="control-group">
+              <label class="control-label" for="confirmsignup"></label>
+              <div class="controls">
+                <button id="confirmsignup" name="confirmsignup" class="btn btn-info">Prijava</button>
+              </div>
+            </div>
+            </fieldset>
+            </form>
+      </div>
+    </div>
+      </div>
+      <div class="modal-footer">
+      <center>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+        </center>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron jumbotron-background">
+    <div class="container">
+        <h2>Izrada poslovnog plana, objava oglasa</h2>
+        <p class="h3">Popunite ovaj formular kako biste objavili da nudite usluge izrade poslovnog plana.</p>
+    </div>
+</div>
+
+<div class="container">
+    
+    <form class="form-horizontal" role="form">
+    <div class="form-group">
+        <label for="predmetKupovine" class="col-sm-2 control-label">Naziv ponuđača</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="predmetKupovine" placeholder="Unesite naziv biznisa, pravni oblik i sjedište" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="predmetKupovineDetaljanOpis" class="col-sm-2 control-label">Opis biznisa</label>
+        <div class="col-sm-10">
+            <textarea type="text" class="form-control" id="predmetKupovineDetaljanOpis" placeholder="Unesite detaljan opis (ukoliko je to potrebno)" rows="5"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <span class="col-sm-2"><p class="control-label"><strong>Prilozi</strong></p></span>
+        <div class="col-sm-7">
+            <div class="input-group">
+                <label class="input-group-btn">
+            <span class="btn btn-primary">
+            Prilog sa računara... <input type="file" style="display: none;" multiple>
+            </span>
+            </label>
+                <input type="text" class="form-control" readonly placeholder="Odaberite jedan ili više fajlova za prilog (ukoliko je to potrebno)">
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="predmetKupovineIsporukaDatum" class="col-sm-2 control-label">Ponuda vrijedi do datuma</label>
+            <div class="col-sm-3">
+                <input id="date2" type="date" name="date2" value="2017-03-18" class="form-control">
+            </div>
+    </div>
+    <div class="form-group">
+        <label for="predmetKupovineIsporukaDatum" class="col-sm-2 control-label">Djelatnosti</label>
+            <div class="col-sm-5">
+                <select id="djelatnost" multiple class="form-control">
+                    <option>Poljoprivreda, lov i šumarstvo</option>
+                    <option>Ribarstvo</option>
+                    <option>Vađenje ruda i kamena</option>
+                    <option>Prerađivačka industrija</option>
+                    <option>Proizvodnja i snabdjevanje el. energijom, gasom i vodom</option>
+                    <option>Građevinarstvo</option>
+                    <option>Trgovina na veliko</option>
+                    <option>Trgovina na malo</option>
+                    <option>Popravak motornih vozila</option>
+                    <option>Ugostiteljstvo</option>
+                    <option>Saobraćaj, skladištenje i komunikacije</option>
+                    <option>Finansijsko posredovanje i osiguranje</option>
+                    <option>Poslovanje nekretninama</option>
+                    <option>Državna uprava i odbrana</option>
+                    <option>Obrazovanje</option>
+                    <option>Zdravstveni i socijalni rad</option>
+                    <option>Ostale javne komunalne djelatnosti</option>
+                </select>
+            </div>
+    </div>
+<div class="form-group">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-10">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="checked">
+            Dostaviti ponudu
+          </label>
+        </div>
+    </div>
+</div>
+    <div class="form-group">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-10">
+            <button type="submit" class="btn btn-default">Objavi</button>
+        </div>
+    </div>
+</form>
+
+
+</div>
+
+<footer class="mainfooter bg-default pt-5" role="contentinfo">
+  <div class="footer-top p-y-0">
+
+  </div>
+  <div class="footer-middle">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4 class="h6">Adresa</h4>
+          <address>
+                <ul class="list-unstyled">
+                  <li>
+                    Trg Slobode 16<br>
+                    75000 Tuzla, BiH<br>
+                  </li>
+                  <li>
+                    <tel>Mob: 061/100-200</tel>
+                  </li>
+                  <li>
+                    email: <a href="mailto:kontakt@bis.ba">kontakt@bis.ba</a>
+                  </li>
+                </ul>
+              </address>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4 class="h6">Popularne usluge</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">Consectetur</a></li>
+            <li><a href="#">Adipiscing</a></li>
+            <li><a href="#">Elit</a></li>
+            <li><a href="#">Lorem ipsum dolor</a></li>
+            <li><a href="#">Lorem ipsum</a></li>
+            <li><a href="#">Lorem</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4 class="h6">O nama</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">Consectetur</a></li>
+            <li><a href="#">Adipiscing</a></li>
+            <li><a href="#">Elit</a></li>
+            <li><a href="#">Lorem ipsum dolor</a></li>
+            <li><a href="#">Lorem ipsum</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4 class="h6">O nama</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">Consectetur</a></li>
+            <li><a href="#">Adipiscing</a></li>
+            <li><a href="#">Elit</a></li>
+            <li><a href="#">Lorem ipsum dolor</a></li>
+            <li><a href="#">Lorem ipsum</a></li>
+            <li><a class="" href="mapa-sajta">Mapa Sajta</a></li> 
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <hr>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <!--Footer Bottom-->
+          <p class="text-xs-center">© BIS.BA, 2017</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/datatables.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    
+<!--
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.2.4/js/buttons.bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+    <script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.24/build/pdfmake.min.js"></script>
+    <script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.24/build/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.2.4/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.2.4/js/buttons.print.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.2.4/js/buttons.colVis.min.js"></script>
+    <script src=""></script>
+    <script src="assets/js/custom.js"></script>
+
+    https://datatables.net/extensions/buttons/examples/styling/bootstrap.html
+-->
+</body>
+
+</html>
